@@ -252,4 +252,10 @@
   </Target>
   <Target Name="AfterBuild">
   </Target> -->
+  <Target Name="NgDebug" BeforeTargets="Build" Condition="'$(Configuration)' == 'Debug'">
+	<Exec WorkingDirectory="$(ProjectDir)itsAugular" Command="ng build" />
+  </Target>
+  <Target Name="NgRelease" BeforeTargets="Build" Condition="'$(Configuration)' == 'Release'">
+	<Exec WorkingDirectory="$(ProjectDir)itsAugular" Command="ng build --prod" />
+  </Target>
 </Project>
