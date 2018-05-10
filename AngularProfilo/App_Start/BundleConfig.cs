@@ -24,15 +24,7 @@ namespace AngularProfilo
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css",
-                      "~/bundles/styles.*"));
-
-            bundles.Add(new ScriptBundle("~/bundles/Angular").Include(
-                "~/main.js",
-                "~/polyfills.js",
-                "~/runtime.js",
-                "~/styles.js",
-                "~/vendor.js"));
+                      "~/Content/site.css"));
         }
     }
 }
